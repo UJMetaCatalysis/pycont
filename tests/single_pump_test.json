@@ -1,6 +1,6 @@
 {
   "io": {
-      "port": "/dev/ttyUSB0",
+      "port": "COM4",
       "baudrate": 9600,
       "timeout": 1
   },
@@ -11,15 +11,11 @@
     "initialize_valve_position": "1"
   },
   "groups": {
-    "chemicals": ["acetone", "water"]
+    "chemicals": ["acetone"]
   },
   "pumps": {
-      "acetone": {
+      "pump1": {
         "switch": "0"
-      },
-      "water": {
-          "switch": "1",
-          "top_velocity": 12000
       }
   }
 }
